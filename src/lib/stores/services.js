@@ -124,3 +124,65 @@ export const Events = writable([
 		]
 	}
 ]);
+export const OtherServicesNames = [
+	'Big Data',
+	'Artificial Intelligence',
+	'Computer Vision',
+	'Internet Of Things',
+	'Blockchain',
+	'Mixed Reality'
+];
+export const OtherServices = writable([
+	{
+		name: 'SERVICE WE OFFER:',
+		description:
+			'  Tame your big data through robust solutions that empower data collection, storage, processing and analysis.',
+		list: [
+			'Consulting and implementation',
+			'Support and evolution',
+			'Data governance',
+			'Data security'
+		]
+	},
+	{
+		name: 'SELECTED AI TECHNOLOGIES WE MASTER:',
+		description:
+			' Improve decision-making, planning and forecasting and revamp business processes with AI and ML technologies simulating human intelligence.',
+		list: [
+			'Machine learning (including deep learning)',
+			'Robotics',
+			'Natural language processing',
+			'Image recognition'
+		]
+	},
+	{
+		name: 'SELECTED SOLUTIONS:',
+		description: ' Derive actionable insights from images and videos.',
+		list: [
+			'Detection of visual defects and anomalies',
+			'Recognition of item location and positioning',
+			'Barcode verification and validation',
+			'3D modelling and mapping'
+		]
+	},
+	{
+		name: 'SERVICE WE OFFER:',
+		description: 'Collect, store, analyze sensor data and build ‘smart’ operations.',
+		list: ['IoT consulting', 'IoT solution deployment', 'IoT analytics']
+	},
+	{
+		name: 'SERVICES WE OFFER:',
+		description:
+			'Get solutions for enhanced traceability, security and faster processing of data and transactions.',
+		list: [
+			'Blockchain-based product development for product companies',
+			'Blockchain consulting and implementation for non-IT enterprises'
+		]
+	},
+	{
+		name: 'SERVICES WE OFFER:',
+		description:
+			'Blur the line between the digital and real worlds to make regular tasks and activities easier, safer, and more engaging.',
+		list: ['Virtual Reality development', 'Augmented Reality development']
+	}
+]);
