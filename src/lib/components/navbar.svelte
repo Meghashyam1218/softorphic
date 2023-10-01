@@ -8,17 +8,24 @@
 	function closeNav() {
 		document.getElementById('mySidenav').style.width = '0';
 	}
+	let y;
+	export let x;
 </script>
 
-<nav class=" p-4  px-6 flex justify-between text-rose-600 font-medium fixed w-[100vw]">
-	<div class="flex flex-col lg:basis-1/3 cursor-pointer">
+<svelte:window bind:scrollY={y} />
+<nav class=" {x === 'true' || y > 50
+	? 'bg-white/80 shadow-sm'
+	: 'bg-transparent'} backdrop-blur-lg transition-all easin-in z-[99] p-4 px-6 flex justify-between text-rose-600 font-medium fixed w-[100vw]">
+	<div
+		class="flex flex-col lg:basis-1/3 cursor-pointer"
+	>
 		<p href="/#" class="font-black text-xs">SOFTORPHIC</p>
 		<p href="/#" class="font-bold text-xs text-justify">SFOTWARE SOLUTIONS</p>
 	</div>
 	<div class="lg:basis-2/3 flex justify-end items-center gap-4 text-xl">
 		<div class="dropdown1 hidden md:inline-block">
 			<a class="dropbtn inline-flex items-center gap-1 lg:p-2" href="/#"
-				>About Us 
+				>About Us
 				<!-- <svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
@@ -31,8 +38,7 @@
 					stroke-linejoin="round"
 					class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg
 				> -->
-				</a
-			>
+			</a>
 			<div class="dropdown-content">
 				<a href="/#">Link 1</a>
 				<a href="/#">Link 2</a>
@@ -104,7 +110,6 @@
 
 	.dropdown {
 		position: relative;
-		
 	}
 
 	.dropdown-content {
@@ -150,7 +155,7 @@
 		padding: 8px 8px 8px 32px;
 		text-decoration: none;
 		font-size: 25px;
-		color:indianred;
+		color: indianred;
 		display: block;
 		transition: 0.3s;
 	}

@@ -8,7 +8,7 @@
 </script>
 
 <section
-	class="hero cursor-default overflow-hidden bg-gray-950 max-h-[500px] lg:max-h-[100vh]  h-[100vh] bg-cover bg-center flex flex-col gap-4 justify-center max-md:items-center"
+	class="hero cursor-default overflow-hidden bg-gray-950 max-h-[100vh]  h-[100vh] bg-cover bg-center flex flex-col gap-4 justify-center max-md:items-center"
 >
 	<div class="welcome-text flex flex-col gap-4  w-[90%] ml-auto">
 		{#if ready}
@@ -42,15 +42,28 @@
 		{/if}
 		<!-- <a href="#menu" class="text-[#ffffff] p-4 mx-4 text-3xl hover:bg-white hover:text-black ">Browse Menu</a> -->
 	</div>
+	<div class=" w-[90%] ml-auto  flex ">
+		<p class="para p-4 backdrop-blur-sm bg-white/70 rounded-[2rem] md:max-w-[70%] max-w-[85%] md:text-xl text-xs text-center font-semibold  text-gray-600 tracking-wide py-6   shadow-lg">
+			" We transform businesses with powerful and adaptable digital solutions that satisfy the needs of
+			today and unlock the opportunities of tomorrow. "
+		</p>
+	</div>
 </section>
+
 
 <style>
 	.hero {
-		background: url('../images/v904-nunny-012.jpg'), url('../images/Grad_13-removebg-preview.png');
+		background: url('../images/herobg.jpg'), url('../images/herobg2.png');
 		background-size: cover, contain;
 		background-position-y: 0, 35vh;
 		background-position-x: 0, 65vw;
 		background-repeat: no-repeat;
 		background-blend-mode: color-burn;
+	}
+	.para{
+		background-image: url("../images/parabg.png");
+		background-size: cover;
+		background-position-y: -20vh ;
+		background-repeat: no-repeat;
 	}
 </style>
