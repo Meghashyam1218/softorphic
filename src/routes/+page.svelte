@@ -3,9 +3,11 @@
 	import Navbar from '../lib/components/navbar.svelte';
 	import OtherServices from '../lib/components/otherServices.svelte';
 	import Services from '../lib/components/services.svelte';
+	import Solutions from '../lib/components/solutions.svelte';
 </script>
 
 <Navbar />
 <Hero />
 <Services/>
 <OtherServices/>
+<Solutions/>

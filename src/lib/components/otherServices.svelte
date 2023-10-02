@@ -22,7 +22,7 @@
 	<div class=" grid basis-1/2  lg:min-w-[724px] my-5">
 		<SelectChips />
 
-		<div class="flex lg:grid overflow-scroll p-4 gap-2 md:gap-4">
+		<div class="flex lg:grid overflow-scroll lg:overflow-hidden p-4 gap-2 md:gap-4">
 			{#each $OtherServices as service, i}
 				<div
 					class="service {select != i + 1
