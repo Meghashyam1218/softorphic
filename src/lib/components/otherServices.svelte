@@ -3,13 +3,21 @@
 	import { activeTab } from '$lib/stores/selecctChips.js';
 	import { OtherServices } from '$lib/stores/services.js';
 	import { OtherServicesNames } from '$lib/stores/services.js';
+
+	import AOS from 'aos';
+	import 'aos/dist/aos.css'; // You can also use <link> for styles
+	import { onMount } from 'svelte';
+	// ..
+	onMount(() => {
+		AOS.init();
+	});
 	let select = activeTab;
 	activeTab.subscribe((value) => {
 		select = value;
 	});
 </script>
 
-<section class="xl:flex lg:w-[80%] w-[90%] mx-auto max-w-[1250px]">
+<section data-aos="fade-up" class="xl:flex lg:w-[80%] w-[90%] mx-auto max-w-[1250px]">
 	<div class="p-4 basis-1/2 my-5 flex flex-col gap-6">
 		<h1 class="text-4xl max-xl:text-center 2xl:text-5xl font-black text-rose-500">
 			Improve and Innovate with the Tech Trends
@@ -19,7 +27,7 @@
 			stay ahead of the curve.
 		</p>
 	</div>
-	<div class=" grid basis-1/2  lg:min-w-[724px] my-5">
+	<div class=" grid basis-1/2 lg:min-w-[724px] my-5">
 		<SelectChips />
 
 		<div class="flex lg:grid overflow-scroll lg:overflow-hidden p-4 gap-2 md:gap-4">
@@ -27,7 +35,7 @@
 				<div
 					class="service {select != i + 1
 						? 'lg:hidden visible'
-						: 'block'} rounded-2xl shadow-lg min-w-[310px] lg:h-[225px]  p-4"
+						: 'block'} rounded-2xl shadow-lg min-w-[310px] lg:h-[225px] p-4"
 				>
 					<h1 class="text-2xl font-bold text-rose-600 mb-2">{OtherServicesNames[i]}</h1>
 					<div class="flex flex-col gap-4">

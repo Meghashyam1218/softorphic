@@ -1,23 +1,23 @@
 <script>
 	import { Events } from '$lib/stores/services.js';
-	// import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	// import gsap from 'gsap/dist/gsap';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	import gsap from 'gsap/dist/gsap';
 	import { onMount } from 'svelte';
 	onMount(() => {
-		// gsap.registerPlugin(ScrollTrigger);
+		gsap.registerPlugin(ScrollTrigger);
 
-		// gsap.from('.card', {
-		// 	scrollTrigger: {
-		// 		trigger: '.events-container',
-		// 		// toggleActions: 'restart none none reverse',
-		// 		toggleActions: 'play none none none',
-		// 		start: '30% center'
-		// 		// markers:true
-		// 	},
-		// 	opacity: 0,
-		// 	ease:"cric.out",
-		// 	stagger: 0.3
-		// });
+		gsap.from('.card', {
+			scrollTrigger: {
+				trigger: '.events-container',
+				// toggleActions: 'restart none none reverse',
+				toggleActions: 'play none none none',
+				start: '30% 70%',
+				// markers:true
+			},
+			opacity: 0,
+			ease:"cric.out",
+			stagger: 0.3
+		});
 
 		const mediaQuery = window.matchMedia('(min-width: 768px)');
 

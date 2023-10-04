@@ -3,8 +3,8 @@
 	console.log(Solutions1);
 </script>
 
-<section
-	class="solutions bg-zinc-50/20 shadow-xl p-4 md:p-8 my-20 flex flex-col gap-5 w-[90vw] max-w-[1440px] mx-auto rounded-2xl"
+<section data-aos="fade-up"
+	class="solutions bg-red-50/40 shadow-xl p-4 md:p-8 my-20 flex flex-col gap-5 w-[90vw] max-w-[1440px] mx-auto rounded-2xl"
 >
 	<div>
 		<h1 class="text-4xl font-bold text-rose-600">
@@ -16,7 +16,7 @@
 	</div>
 	<div class="solutionsgrid grid md:grid-cols-3  lg:grid-cols-4 align-middle items-center justify-items-center gap-3">
 		{#each $Solutions1.list as solution, i}
-			<div
+			<div data-aos="zoom-in" data-aos-delay={i*50}
 				class="solution m-2 p-1 md:p-4 font-semibold{' justify-self-stretch h-[100%]'}
                 {' border-4 max-md:border-l-rose-500 md:border-r-rose-500'}
                 {"transition-all ease-in"}
@@ -32,7 +32,7 @@
 <style>
 	.solutions {
 		/* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
-		/* background-image: url("../images/2946.jpg"); */
+		/* background-image: url("../images/top-1.jpg"); */
 		/* background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%); */
 	}
 	.solutionsgrid {

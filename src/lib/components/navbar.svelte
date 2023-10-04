@@ -14,8 +14,8 @@
 
 <svelte:window bind:scrollY={y} />
 <nav class=" {x === 'true' || y > 50
-	? 'bg-white/80 shadow-sm'
-	: 'bg-transparent'} backdrop-blur-lg transition-all easin-in z-[99] p-4 px-6 flex justify-between text-rose-600 font-medium fixed w-[100vw]">
+	? 'bg-white shadow-sm'
+	: 'bg-transparent'}  transition-all easin-in z-[99] p-4 px-6 flex justify-between text-rose-600 font-medium fixed w-[100vw]">
 	<div
 		class="flex flex-col lg:basis-1/3 cursor-pointer"
 	>
@@ -24,7 +24,7 @@
 	</div>
 	<div class="lg:basis-2/3 flex justify-end items-center gap-4 text-xl">
 		<div class="dropdown1 hidden md:inline-block">
-			<a class="dropbtn inline-flex items-center gap-1 lg:p-2" href="/#"
+			<a class=" text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2" href="/#"
 				>About Us
 				<!-- <svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@
 			</div>
 		</div>
 		<div class="dropdown hidden md:inline-block">
-			<a class="dropbtn inline-flex items-center gap-1 lg:p-2" href="/#"
+			<a class=" text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2" href="/#"
 				>Services<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
@@ -66,10 +66,10 @@
 				<a href="/#">Link 3</a>
 			</div>
 		</div>
-		<a class="hidden md:inline-flex items-center gap-1 lg:p-2" href="/#">Pricing</a>
-		<a class="hidden md:inline-flex items-center gap-1 lg:p-2" href="/#">Contact Us </a>
+		<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/#">Pricing</a>
+		<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/#">Contact Us </a>
 		<button
-			class=" hidden md:block p-2 min-w-[132px] bg-rose-600 text-gray-100 rounded-md hover:text-rose-600 hover:bg-transparent hover:border-rose-600 border-2 hover:font-semibold transition-all ease-in"
+			class=" text-sm hidden md:block p-2 min-w-[132px] bg-rose-600 text-gray-100 rounded-md hover:text-rose-600 hover:bg-transparent hover:border-rose-600 border-2 hover:font-semibold transition-all ease-in"
 		>
 			Get Started
 		</button>
