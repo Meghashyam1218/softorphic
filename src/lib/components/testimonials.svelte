@@ -7,31 +7,31 @@
 			name: 'Lillian Murray',
 			designation: 'Senior Solution Architect',
 			testimonial:
-				'ScienceSoft proved to be a professional service provider from the outset. We appreciate their proactive approach and ability to suggest improvements to a prospective solution on both architectural and business levels. We know we can always rely on ScienceSoft’s various competencies when our clients require quality software which would facilitate their business success.'
+				'Softorphic proved to be a professional service provider from the outset. We appreciate their proactive approach and ability to suggest improvements to a prospective solution on both architectural and business levels. We know we can always rely on Softorphic’s various competencies when our clients require quality software which would facilitate their business success.'
 		},
 		{
 			name: 'Jeffery Jensen',
 			designation: 'Director',
 			testimonial:
-				'ScienceSoft offers a high caliber of resources skilled in Microsoft Azure .NET, mobile and Quality Assurance. Over the past three years, Lixar was very pleased with the service provided by ScienceSoft development teams and executive management. For accelerated project timelines which require skilled resources, ScienceSoft is a company that your team should consider.'
+				'Softorphic offers a high caliber of resources skilled in Microsoft Azure .NET, mobile and Quality Assurance. Over the past three years, Lixar was very pleased with the service provided by Softorphic development teams and executive management. For accelerated project timelines which require skilled resources, Softorphic is a company that your team should consider.'
 		},
 		{
 			name: 'Lloyd Freeman',
 			designation: 'Chief Financial Officer',
 			testimonial:
-				'When we first contacted ScienceSoft, we needed expert advice on the creation of the centralized analytical solution to achieve company-wide transparent analytics and reporting. The system created by ScienceSoft automates data integration from different sources, invoice generation, and provides visibility into the invoicing process. We have already engaged ScienceSoft in supporting the solution and would definitely consider ScienceSoft as an IT vendor in the future.'
+				'When we first contacted Softorphic, we needed expert advice on the creation of the centralized analytical solution to achieve company-wide transparent analytics and reporting. The system created by Softorphic automates data integration from different sources, invoice generation, and provides visibility into the invoicing process. We have already engaged Softorphic in supporting the solution and would definitely consider Softorphic as an IT vendor in the future.'
 		},
 		{
 			name: 'Ernest Curry',
 			designation: 'Founder & CEO',
 			testimonial:
-				'ScienceSoft powered Tieto with a competent team to develop products for banking services. The team has been delivering results within budget and time. I’m absolutely satisfied with the quality of their services, their development skills and responsibility as well as the way they manage communication with us and our clients. I fully recommend ScienceSoft as a reliable IT partner!'
+				'Softorphic powered Tieto with a competent team to develop products for banking services. The team has been delivering results within budget and time. I’m absolutely satisfied with the quality of their services, their development skills and responsibility as well as the way they manage communication with us and our clients. I fully recommend Softorphic as a reliable IT partner!'
 		},
 		{
 			name: 'Cornelia BarberL',
 			designation: 'Head of eBanking',
 			testimonial:
-				"Over the past 10 years we've worked on about ten mobile app development projects with ScienceSoft. It was our first encounter with an outsourcing company. The relationship turned out to be very good, so we saw no need to look for other suppliers. ScienceSoft is a professional and dedicated company. We would certainly recommend ScienceSoft as a highly skilled and reliable technology partner."
+				"Over the past 10 years we've worked on about ten mobile app development projects with Softorphic. It was our first encounter with an outsourcing company. The relationship turned out to be very good, so we saw no need to look for other suppliers. Softorphic is a professional and dedicated company. We would certainly recommend Softorphic as a highly skilled and reliable technology partner."
 		}
 	];
 </script>

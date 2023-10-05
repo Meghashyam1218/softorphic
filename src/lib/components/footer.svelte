@@ -1,5 +1,5 @@
 <section class="footer bg-gray-100 p-4 border-t-4 border-rose-600">
-	<div class="w-[90vw] xl:w-[80vw] max-w-[1200px] flex max-lg:flex-col max-lg:gap-8 justify-between mx-auto p-4">
+	<div class="w-[90vw] xl:w-[90vw] max-w-[1600px] flex max-lg:flex-col max-lg:gap-8 justify-between mx-auto p-4">
 		<div class="footer-left text-base flex flex-col gap-4 text-gray-600 lg:p-4 fill-gray-400">
 			<div class="flex flex-col lg:basis-1/3 cursor-pointer">
 				<p href="/#" class="font-black text-xs">SOFTORPHIC</p>

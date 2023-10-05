@@ -14,7 +14,7 @@
 
 <svelte:window bind:scrollY={y} />
 <nav class=" {x === 'true' || y > 50
-	? 'bg-white shadow-sm'
+	? 'bg-white shadow-md'
 	: 'bg-transparent'}  transition-all easin-in z-[99] p-4 px-6 flex justify-between text-rose-600 font-medium fixed w-[100vw]">
 	<div
 		class="flex flex-col lg:basis-1/3 cursor-pointer"
@@ -45,9 +45,10 @@
 				<a href="/#">Link 3</a>
 			</div>
 		</div>
-		<div class="dropdown hidden md:inline-block">
+		<div class="dropdown2 hidden md:inline-block">
 			<a class=" text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2" href="/#"
-				>Services<svg
+				>Services
+				<!-- <svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
 					height="24"
@@ -58,7 +59,8 @@
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg
-				></a
+				> -->
+				</a
 			>
 			<div class="dropdown-content">
 				<a href="/#">Link 1</a>
@@ -66,7 +68,7 @@
 				<a href="/#">Link 3</a>
 			</div>
 		</div>
-		<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/#">Pricing</a>
+		<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/pricing">Pricing</a>
 		<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/#">Contact Us </a>
 		<button
 			class=" text-sm hidden md:block p-2 min-w-[132px] bg-rose-600 text-gray-100 rounded-md hover:text-rose-600 hover:bg-transparent hover:border-rose-600 border-2 hover:font-semibold transition-all ease-in"
@@ -79,10 +81,10 @@
 	</div>
 </nav>
 <div id="mySidenav" class="sidenav">
-	<a href="/#" class="closebtn" on:click={closeNav}>&times;</a>
+	<a href="#" class="closebtn" on:click={closeNav}>&times;</a>
 	<a href="/#">About</a>
 	<a href="/#">Services</a>
-	<a href="/#">Pricing</a>
+	<a href="/pricing">Pricing</a>
 	<a href="/#">Contact</a>
 </div>
 
