@@ -9,7 +9,7 @@
 		gsap.from('.card', {
 			scrollTrigger: {
 				trigger: '.events-container',
-				// toggleActions: 'restart none none reverse',
+				// toggleActions: 'restart none none none',
 				toggleActions: 'play none none none',
 				start: '30% 70%',
 				// markers:true
@@ -38,7 +38,7 @@
 	}
 </script>
 
-<section data-aos="fade-down" class="events my-20 bg-white rounded-[50px]">
+<section data-aos="fade-up" class="events my-20 bg-white rounded-[50px]">
 	<div
 		class="events-head w-[90vw] mx-auto flex flex-col md:flex-row justify-between items-center p-4"
 	>

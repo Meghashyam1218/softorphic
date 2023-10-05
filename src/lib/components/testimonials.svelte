@@ -48,13 +48,12 @@
 				>
 					<img
 						alt="avatar"
-						src="./Sample-1.png"
+						src="./Sample-{i}.png"
 						class=" h-[100px] w-[100px] md:h-[150px] md:w-[150px]"
 					/>
 					<p class="text-center max-md:text-sm p-4 text-gray-800">
 						{testimonial.testimonial}
 					</p>
-
 					<div class="flex flex-col justify-center items-center gap-6">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
