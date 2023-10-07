@@ -16,7 +16,7 @@
 <nav class=" {x === 'true' || y > 50
 	? 'bg-white shadow-md'
 	: 'bg-transparent'}  transition-all easin-in z-[99] p-4 px-6 flex justify-between text-rose-600 font-medium fixed w-[100vw]">
-	<div
+	<div href="/"
 		class="flex flex-col lg:basis-1/3 cursor-pointer"
 	>
 		<p href="/#" class="font-black text-xs">SOFTORPHIC</p>
@@ -24,7 +24,7 @@
 	</div>
 	<div class="lg:basis-2/3 flex justify-end items-center gap-4 text-xl">
 		<div class="dropdown1 hidden md:inline-block">
-			<a class=" text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2" href="/#"
+			<a class=" text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2" href="/aboutus"
 				>About Us
 				<!-- <svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@
 			</div>
 		</div>
 		<div class="dropdown2 hidden md:inline-block">
-			<a class=" text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2" href="/#"
+			<a class=" text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2" href="#services"
 				>Services
 				<!-- <svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@
 			</div>
 		</div>
 		<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/pricing">Pricing</a>
-		<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/#">Contact Us </a>
+		<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/contactus">Contact Us </a>
 		<button
 			class=" text-sm hidden md:block p-2 min-w-[132px] bg-rose-600 text-gray-100 rounded-md hover:text-rose-600 hover:bg-transparent hover:border-rose-600 border-2 hover:font-semibold transition-all ease-in"
 		>
@@ -82,10 +82,10 @@
 </nav>
 <div id="mySidenav" class="sidenav">
 	<a href="#" class="closebtn" on:click={closeNav}>&times;</a>
-	<a href="/#">About</a>
-	<a href="/#">Services</a>
+	<a href="/aboutus">About</a>
+	<a href="/#servies">Services</a>
 	<a href="/pricing">Pricing</a>
-	<a href="/#">Contact</a>
+	<a href="/contactus">Contact</a>
 </div>
 
 <style>

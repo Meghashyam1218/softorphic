@@ -39,7 +39,7 @@
 </script>
 
 <section data-aos="fade-up" class="events my-20 bg-white rounded-[50px]">
-	<div
+	<div id="services"
 		class="events-head w-[90vw] mx-auto flex flex-col md:flex-row justify-between items-center p-4"
 	>
 		<h1
