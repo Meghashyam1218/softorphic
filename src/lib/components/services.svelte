@@ -10,8 +10,8 @@
 			scrollTrigger: {
 				trigger: '.events-container',
 				// toggleActions: 'restart none none none',
-				toggleActions: 'play none none none',
-				start: '30% 70%',
+				toggleActions: 'play none none reverse',
+				start: '30% 80%',
 				// markers:true
 			},
 			opacity: 0,
