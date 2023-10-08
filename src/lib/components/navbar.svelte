@@ -87,7 +87,7 @@
 
 	<a href="/">Home</a>
 	<a href="/aboutus">About</a>
-	<a href="/#servies" >Services</a>
+	<a href="/#services" >Services</a>
 	<a href="/pricing">Pricing</a>
 	<!-- <a href="/contactus">Contact</a> -->
 </div>
