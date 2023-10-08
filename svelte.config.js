@@ -3,6 +3,9 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
+		prerender: {
+			handleMissingId: 'ignore'
+		},
 		adapter: adapter()
 	},
 	preprocess: vitePreprocess()
