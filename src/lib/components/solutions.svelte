@@ -4,7 +4,7 @@
 </script>
 
 <section data-aos="fade-up"
-	class="solutions bg-red-50/40 shadow-xl p-4 md:p-8 my-20 flex flex-col gap-5 w-[90vw] max-w-[1440px] mx-auto rounded-2xl"
+	class="solutions bg-blue-50/40 shadow-xl p-4 md:p-8 my-20 flex flex-col gap-5 w-[90vw] max-w-[1440px] mx-auto rounded-2xl"
 >
 	<div>
 		<h1 class="text-4xl font-bold text-blue-600">

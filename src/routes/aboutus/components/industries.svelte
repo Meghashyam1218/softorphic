@@ -83,7 +83,7 @@
 	<h1 class=" font-black text-2xl md:text-4xl text-gray-700">Industries Softorphic serves</h1>
 	<div class="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-4 max-w-[1100px]">
 		{#each industries.name as industry, i}
-			<div
+			<div data-aos="flip-right"
 				class=" border-2 border-blue-100 hover:border-blue-300 gap-4 rounded-xl justify-center items-center p-4 flex flex-col lg:max-w-[]"
 			>
 				{@html industries.svg[i]}

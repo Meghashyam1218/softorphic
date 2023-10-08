@@ -10,8 +10,8 @@
 	</p>
 	<div class="grid gap-10 md:grid-cols-2 justify-center xl:grid-cols-3">
 		{#each $pricingItems as item, index}
-			<div data-aos="zoom-out"
-				class="border-2 shadow-lg shadow-blue-600/10 md:border-l-blue-500 max-md:border-t-blue-500 border-l-4 gap-2 p-4 flex justify-between flex-col"
+			<div  data-aos="zoom-out"
+				class="item border-2 cursor-pointer shadow-lg shadow-blue-600/10 md:border-l-blue-500 max-md:border-t-blue-500 border-l-4 gap-2 p-4 flex justify-between flex-col"
 			>
 				<div class="flex flex-col h-[130px] p-2 justify-center items-center gap-2">
 					{@html item.svg}
@@ -50,7 +50,7 @@
     svg{
         transition: transform 0.3s ease-out;
     }
-    a:hover svg{
+    .item:hover a svg{
         -webkit-transform: translateX(4px);
             -moz-transform: translateX(4px);
             -ms-transform: translateX(4px);
