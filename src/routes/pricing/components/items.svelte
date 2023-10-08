@@ -3,22 +3,23 @@
 	
 </script>
 
-<section class="lg:w-[90vw] py-[100px] max-w-[1600px] mx-auto p-4 overflow-x-hidden">
+<section class="lg:w-[90vw] mb-[100px] max-w-[1600px] mx-auto p-4 overflow-x-hidden">
 	<h1 class="font-serif text-3xl text-blue-600">How much will your project cost?</h1>
 	<p class="text-neutral-600 my-3">
 		Choose one of the options below to get an accurate price estimation for your project:
 	</p>
 	<div class="grid gap-10 md:grid-cols-2 justify-center xl:grid-cols-3">
 		{#each $pricingItems as item, index}
-			<div  data-aos="zoom-out"
+			<div
+				data-aos="zoom-in"
 				class="item border-2 cursor-pointer shadow-lg shadow-blue-600/10 md:border-l-blue-500 max-md:border-t-blue-500 border-l-4 gap-2 p-4 flex justify-between flex-col"
 			>
-				<div class="flex flex-col h-[130px] p-2 justify-center items-center gap-2">
+				<div class="flex flex-col p-2 justify-center items-center gap-2">
 					{@html item.svg}
 					<h1 class="text-2xl text-center text-gray-700 font-bold">{item.name}</h1>
 				</div>
 				<p class="text-gray-700 p-4">{item.description}</p>
-				<a
+				<div
 					href="#"
 					class="text-base text-blue-600 stroke-blue-600 font-bold stroke-2 inline-flex justify-end items-center p-2 mt-2"
 				>
@@ -41,20 +42,21 @@
 							stroke-linejoin="round"
 						/>
 					</svg>
-				</a>
+				</div>
 			</div>
 		{/each}
 	</div>
 </section>
+
 <style>
-    svg{
-        transition: transform 0.3s ease-out;
-    }
-    .item:hover a svg{
-        -webkit-transform: translateX(4px);
-            -moz-transform: translateX(4px);
-            -ms-transform: translateX(4px);
-            -o-transform: translateX(4px);
-            transform: translateX(4px);
-    }
+	svg {
+		transition: transform 0.3s ease-out;
+	}
+	.item:hover div svg {
+		-webkit-transform: translateX(4px);
+		-moz-transform: translateX(4px);
+		-ms-transform: translateX(4px);
+		-o-transform: translateX(4px);
+		transform: translateX(4px);
+	}
 </style>
