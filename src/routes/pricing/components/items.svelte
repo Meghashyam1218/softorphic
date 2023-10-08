@@ -3,7 +3,7 @@
 	
 </script>
 
-<section class="lg:w-[90vw] py-[100px] max-w-[1600px] mx-auto p-4">
+<section class="lg:w-[90vw] py-[100px] max-w-[1600px] mx-auto p-4 overflow-x-hidden">
 	<h1 class="font-serif text-3xl text-rose-600">How much will your project cost?</h1>
 	<p class="text-neutral-600 my-3">
 		Choose one of the options below to get an accurate price estimation for your project:
