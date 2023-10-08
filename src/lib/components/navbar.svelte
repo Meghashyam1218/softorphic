@@ -48,7 +48,7 @@
 			</div>
 		</div>
 		<div class="dropdown2 hidden md:inline-block">
-			<a class=" text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2" href="/#services"
+			<a class=" text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2" href="/#services" data-sveltekit-preload-data
 				>Services
 				<!-- <svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@
 
 	<a href="/">Home</a>
 	<a href="/aboutus">About</a>
-	<a href="/#servies">Services</a>
+	<a href="/#servies" data-sveltekit-preload-data>Services</a>
 	<a href="/pricing">Pricing</a>
 	<!-- <a href="/contactus">Contact</a> -->
 </div>
