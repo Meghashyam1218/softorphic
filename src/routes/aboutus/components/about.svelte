@@ -5,19 +5,19 @@
 		<div
 			data-aos="fade-up"
 			
-			class="basis-1/2 text-neutral-700 font-medium flex flex-col justify-center p-6 max-lg:mt-[-75px]"
+			class="basis-1/2 text-neutral-700 font-medium flex flex-col max-xl:items-center justify-center p-6 max-lg:mt-[-40px]"
 		>
-			<!-- <h1 class="text-4xl md:text-5xl text-gray-700 font-semibold text-center md:text-start">
-				About Us
-			</h1> -->
-			<br />
+			<h1 class="text-2xl xl:text-5xl  text-rose-700 mb-2 font-extrabold text-center md:text-start">
+				Softorphic Software Solutions
+			</h1>
+			
 			<p class="text-sm md:text-base">
 				We're a team of dedicated IT professionals committed to delivering top-notch solutions. Our
 				expertise covers web development, mobile app development, cloud computing, AI, and data
 				analytics. We've partnered with industry giants like Microsoft, Google, Amazon, and
 				Facebook.
 			</p>
-			<br />
+			<br>
 			<p class=" text-sm md:text-base">
 				Our mission is to provide exceptional tech and service, creating value for our clients.
 				We're driven to be the best, always adapting to market needs. We're not just a company,
