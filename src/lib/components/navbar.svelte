@@ -15,7 +15,7 @@
 <svelte:window bind:scrollY={y} />
 <nav class=" {x === 'true' || y > 50
 	? 'bg-white shadow-md'
-	: 'bg-transparent'}  transition-all easin-in z-[99] p-4 px-6 flex justify-between text-rose-600 font-medium fixed w-[100vw]">
+	: 'bg-transparent'}  transition-all easin-in z-[99] p-4 px-6 flex justify-between text-blue-600 font-medium fixed w-[100vw]">
 	<div href="/"
 		class="flex flex-col lg:basis-1/3 cursor-pointer"
 	>
@@ -73,7 +73,7 @@
 		<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/pricing">Pricing</a>
 		<!-- <a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/contactus">Contact Us </a> -->
 		<button
-			class=" text-sm hidden md:block p-2 min-w-[132px] bg-rose-600 text-gray-100 rounded-md hover:text-rose-600 hover:bg-transparent hover:border-rose-600 border-2 hover:font-semibold transition-all ease-in"
+			class=" text-sm hidden md:block p-2 min-w-[132px] bg-blue-600 text-gray-100 rounded-md hover:text-blue-600 hover:bg-transparent hover:border-blue-600 border-2 hover:font-semibold transition-all ease-in"
 		>
 			Get Started
 		</button>

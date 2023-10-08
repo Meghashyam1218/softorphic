@@ -30,8 +30,8 @@
 				selectOption(i+1);
 			}}
 			class="button-container mx-2 {count_value == (i+1)
-				? 'border-rose-500'
-				: 'border-r-rose-300'} border-4 rounded-full"
+				? 'border-blue-500'
+				: 'border-r-blue-300'} border-4 rounded-full"
 			id="myButton"
 		>
 			<button class="button-icon-container">

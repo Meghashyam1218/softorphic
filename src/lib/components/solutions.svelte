@@ -7,7 +7,7 @@
 	class="solutions bg-red-50/40 shadow-xl p-4 md:p-8 my-20 flex flex-col gap-5 w-[90vw] max-w-[1440px] mx-auto rounded-2xl"
 >
 	<div>
-		<h1 class="text-4xl font-bold text-rose-600">
+		<h1 class="text-4xl font-bold text-blue-600">
 			{$Solutions1.name}
 		</h1>
 		<p class="font-medium text-neutral-600 my-2">
@@ -18,9 +18,9 @@
 		{#each $Solutions1.list as solution, i}
 			<div data-aos="zoom-in" data-aos-delay={i*50}
 				class="solution m-2 p-1 md:p-4 font-semibold{' justify-self-stretch h-[100%]'}
-                {' border-4 max-md:border-l-rose-500 md:border-r-rose-500'}
+                {' border-4 max-md:border-l-blue-500 md:border-r-blue-500'}
                 {"transition-all ease-in"}
-                {'hover:bg-rose-500 hover:text-slate-50 hover:border-rose-500'}
+                {'hover:bg-blue-500 hover:text-slate-50 hover:border-blue-500'}
                 flex justify-center items-center rounded-xl"
 			>
 				<h1 class="text-center max-md:text-sm ">{solution}</h1>

@@ -7,7 +7,7 @@
 			
 			class="basis-1/2 text-neutral-700 font-medium flex flex-col max-xl:items-center justify-center p-6 max-lg:mt-[-40px]"
 		>
-			<h1 class="text-2xl xl:text-5xl  text-rose-700 mb-2 font-extrabold text-center md:text-start">
+			<h1 class="text-2xl xl:text-5xl  text-blue-700 mb-2 font-extrabold text-center md:text-start">
 				Softorphic Software Solutions
 			</h1>
 			

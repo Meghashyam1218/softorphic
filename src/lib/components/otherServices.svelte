@@ -19,7 +19,7 @@
 
 <section data-aos="fade-up" class="xl:flex lg:w-[80%] w-[90%] mx-auto max-w-[1250px]">
 	<div class="p-4 basis-1/2 my-5 flex flex-col gap-6">
-		<h1 class="text-4xl max-xl:text-center 2xl:text-5xl font-black text-rose-500">
+		<h1 class="text-4xl max-xl:text-center 2xl:text-5xl font-black text-blue-500">
 			Improve and Innovate with the Tech Trends
 		</h1>
 		<p class="text-neutral-600 text-sm text-center xl:text-left xl:text-base font-medium">
@@ -37,7 +37,7 @@
 						? 'lg:hidden visible'
 						: 'block'} rounded-2xl shadow-lg min-w-[310px] lg:h-[225px] p-4"
 				>
-					<h1 class="text-2xl font-bold text-rose-600 mb-2">{OtherServicesNames[i]}</h1>
+					<h1 class="text-2xl font-bold text-blue-600 mb-2">{OtherServicesNames[i]}</h1>
 					<div class="flex flex-col gap-4">
 						<p class=" font-medium text-xs text-neutral-600">
 							{service.description}

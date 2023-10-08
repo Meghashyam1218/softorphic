@@ -15,7 +15,7 @@
 		
 			<h1
 				transition:fade={{ delay: 0, duration: 300 }}
-				class=" font-bold welcome text-left text-xl md:text-2xl lg:text-3xl text-rose-700"
+				class=" font-bold welcome text-left text-xl md:text-2xl lg:text-3xl text-blue-700"
 			>
 				SOFTORPHIC <br /> SOFTWARE SOLUTIONS
 			</h1>

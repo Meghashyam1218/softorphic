@@ -17,11 +17,11 @@
 					</div> -->
 					<a href="/admissions" id="joinnowbtn" class="flex justify-center mt-4">
 						<button
-							class=" group flex flex-row bg-white shadow-2xl shadow-gray-600 text-[#0c1637] xl:text-xl text-base font-medium p-2 xl:p-4 rounded-full duration-700  hover:text-rose-700"
+							class=" group flex flex-row bg-white shadow-2xl shadow-gray-600 text-[#0c1637] xl:text-xl text-base font-medium p-2 xl:p-4 rounded-full duration-700  hover:text-blue-700"
 						>
 							<div class="px-3">
 								<svg
-									class="rotate-[315deg] duration-700 group-hover:fill-rose-700"
+									class="rotate-[315deg] duration-700 group-hover:fill-blue-700"
 									viewBox="0 0 24 25"
 									role="img"
 									data-v-ab5c9590=""
@@ -43,7 +43,7 @@
 				<div class=" md:w-[50%] flex flex-col justify-between md:py-8">
 					<div>
 						<p
-							class="text-center md:text-start text-rose-700 font-semibold 3xs:text-xl md:text-2xl md:mr-[5%]"
+							class="text-center md:text-start text-blue-700 font-semibold 3xs:text-xl md:text-2xl md:mr-[5%]"
 						>
 							"The future belongs to those who believe in the beauty of their dreams."
 						</p>
@@ -92,7 +92,7 @@
 					</div>
 				</div>
 				<div class="flex 2xs:flex-row md:w-[50%] justify-evenly">
-					<div class="flex 3xs:flex-col text-rose-700 pr-6 pt-6">
+					<div class="flex 3xs:flex-col text-blue-700 pr-6 pt-6">
 						<div class="w-[60%] xl:w-[50%]">
 							<div class="pb-2 w-max">
 								<a href="/" class="sm:hover:scale-[1.1] cursor-pointer text-xl duration-300">Home</a

@@ -4,14 +4,14 @@
 </script>
 
 <section class="lg:w-[90vw] py-[100px] max-w-[1600px] mx-auto p-4 overflow-x-hidden">
-	<h1 class="font-serif text-3xl text-rose-600">How much will your project cost?</h1>
+	<h1 class="font-serif text-3xl text-blue-600">How much will your project cost?</h1>
 	<p class="text-neutral-600 my-3">
 		Choose one of the options below to get an accurate price estimation for your project:
 	</p>
 	<div class="grid gap-10 md:grid-cols-2 justify-center xl:grid-cols-3">
 		{#each $pricingItems as item, index}
 			<div data-aos="zoom-out"
-				class="border-2 shadow-lg shadow-rose-600/10 md:border-l-rose-500 max-md:border-t-rose-500 border-l-4 gap-2 p-4 flex justify-between flex-col"
+				class="border-2 shadow-lg shadow-blue-600/10 md:border-l-blue-500 max-md:border-t-blue-500 border-l-4 gap-2 p-4 flex justify-between flex-col"
 			>
 				<div class="flex flex-col h-[130px] p-2 justify-center items-center gap-2">
 					{@html item.svg}
@@ -20,7 +20,7 @@
 				<p class="text-gray-700 p-4">{item.description}</p>
 				<a
 					href="#"
-					class="text-base text-rose-600 stroke-rose-600 font-bold stroke-2 inline-flex justify-end items-center p-2 mt-2"
+					class="text-base text-blue-600 stroke-blue-600 font-bold stroke-2 inline-flex justify-end items-center p-2 mt-2"
 				>
 					<span class="  ">Get Pricing</span>
 					<svg

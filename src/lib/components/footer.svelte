@@ -1,4 +1,4 @@
-<section class="footer bg-gray-100 p-4 border-t-4 border-rose-600">
+<section class="footer bg-gray-100 p-4 border-t-4 border-t-blue-600">
 	<div class="w-[90vw] xl:w-[90vw] max-w-[1600px] flex max-lg:flex-col max-lg:gap-8 justify-between mx-auto p-4">
 		<div class="footer-left text-base flex flex-col gap-4 text-gray-600 lg:p-4 fill-gray-400">
 			<div class="flex flex-col lg:basis-1/3 cursor-pointer">
@@ -52,15 +52,15 @@
 		<div class="footer-middle flex flex-col gap-2">
 			<h1 class="text-gray-500 font-bold text-xl">Any Questions?</h1>
 			<textarea
-				class="p-2 rounded-md border-2 border-neutral-200 hover:border-rose-500 focus:border-rose-500"
+				class="p-2 rounded-md border-2 border-neutral-200 hover:border-blue-500 focus:border-blue-500"
 				placeholder="Ask your queries here..."
 			/>
 			<input
 				placeholder="Enter your email"
-				class="xl:w-[400px] rounded-md border-2 border-neutral-200 hover:border-rose-500 focus:border-rose-500 p-2"
+				class="xl:w-[400px] rounded-md border-2 border-neutral-200 hover:border-blue-500 focus:border-blue-500 p-2"
 				type="email"
 			/>
-			<button class="p-2 lg:w-[200px] rounded-md hover:bg-rose-600 bg-rose-500 text-slate-200"
+			<button class="p-2 lg:w-[200px] rounded-md hover:bg-blue-600 bg-blue-500 text-slate-200"
 				>Submit</button
 			>
 		</div>

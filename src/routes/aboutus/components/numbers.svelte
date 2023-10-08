@@ -4,16 +4,16 @@
     </h1>
     <div class="flex max-md:flex-col gap-4 justify-between" >
         <h1 class=" max-md:border-b-2 md:border-l-2 gap-4  lg:text-xl md:flex-col inline-flex max-md:items-center px-4  text-gray-600 ">
-            <span class="font-black  text-4xl text-rose-800">1</span> years in IT
+            <span class="font-black  text-4xl text-blue-800">1</span> years in IT
         </h1>
         <h1 class=" max-md:border-b-2 md:border-l-2 gap-4  lg:text-xl md:flex-col inline-flex max-md:items-center px-4  text-gray-600 ">
-            <span class="font-black  text-4xl text-rose-800">10+</span> IT professionals
+            <span class="font-black  text-4xl text-blue-800">10+</span> IT professionals
         </h1>
         <h1 class=" max-md:border-b-2 md:border-l-2 gap-4  lg:text-xl md:flex-col inline-flex max-md:items-center px-4  text-gray-600 ">
-            <span class="font-black  text-4xl text-rose-800">15+</span> Sucess stories
+            <span class="font-black  text-4xl text-blue-800">15+</span> Sucess stories
         </h1>
         <h1 class=" max-md:border-b-2 md:border-l-2 gap-4  lg:text-xl md:flex-col inline-flex max-md:items-center px-4  text-gray-600 ">
-            <span class="font-black  text-4xl text-rose-800">10+</span> Industries covered
+            <span class="font-black  text-4xl text-blue-800">10+</span> Industries covered
         </h1>
     </div>
 </scetion>

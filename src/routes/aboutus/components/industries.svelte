@@ -84,7 +84,7 @@
 	<div class="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-4 max-w-[1100px]">
 		{#each industries.name as industry, i}
 			<div
-				class=" border-2 border-rose-100 hover:border-rose-300 gap-4 rounded-xl justify-center items-center p-4 flex flex-col lg:max-w-[]"
+				class=" border-2 border-blue-100 hover:border-blue-300 gap-4 rounded-xl justify-center items-center p-4 flex flex-col lg:max-w-[]"
 			>
 				{@html industries.svg[i]}
 				<h1 class="font-bold text-center text-gray-700">{industry}</h1>
