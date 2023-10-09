@@ -1,4 +1,4 @@
-<scetion class="p-4 md:p-8 mx-auto flex flex-col gap-6 my-10 lg:max-w-[1600px]">
+<scetion class="p-4 md:p-8 mx-auto flex flex-col gap-6 my-10 overflow-hidden lg:max-w-[1600px]">
 	<h1 class=" font-black text-2xl md:text-4xl text-gray-700">Whom we serve</h1>
 	<div class="flex flex-col 2md:flex-row gap-4 ">
 		<h1 data-aos="zoom-out" class=" border-2 basis-1/2 gap-4 rounded-xl p-4 flex flex-col  lg:max-w-[500px]">

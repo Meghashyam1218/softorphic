@@ -13,18 +13,23 @@
 </script>
 
 <svelte:window bind:scrollY={y} />
-<nav class=" {x === 'true' || y > 50
-	? 'bg-white shadow-md'
-	: 'bg-transparent'}  transition-all easin-in z-[99] p-4 px-6 flex justify-between text-blue-600 font-medium fixed w-[100vw]">
-	<div href="/"
+<nav
+	class=" {x === 'true' || y > 50
+		? 'bg-white shadow-md'
+		: 'bg-transparent'}  transition-all easin-in z-[99] p-4 px-6 flex justify-between text-blue-600 font-medium fixed w-[100vw]"
+>
+	<!-- <div href="/"
 		class="flex flex-col lg:basis-1/3 cursor-pointer"
 	>
 		<p href="/#" class="font-black text-xs">SOFTORPHIC</p>
 		<p href="/#" class="font-bold text-xs text-justify">SFOTWARE SOLUTIONS</p>
-	</div>
+	</div> -->
+	<a href="/"><img alt="logo" src="./logo-g-h-40.png" /></a>
 	<div class="lg:basis-2/3 flex justify-end items-center gap-4 text-xl">
 		<div class="dropdown1 hidden md:inline-block">
-		<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/">Home</a>
+			<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/"
+				>Home</a
+			>
 
 			<a class=" text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2" href="/aboutus"
 				>About Us
@@ -48,7 +53,9 @@
 			</div>
 		</div>
 		<div class="dropdown2 hidden md:inline-block">
-			<a class=" text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2" href="/#services" 
+			<a
+				class=" text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2"
+				href="/#services"
 				>Services
 				<!-- <svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -62,15 +69,16 @@
 					stroke-linejoin="round"
 					class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg
 				> -->
-				</a
-			>
+			</a>
 			<div class="dropdown-content">
 				<a href="/#">Link 1</a>
 				<a href="/#">Link 2</a>
 				<a href="/#">Link 3</a>
 			</div>
 		</div>
-		<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/pricing">Pricing</a>
+		<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/pricing"
+			>Pricing</a
+		>
 		<!-- <a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/contactus">Contact Us </a> -->
 		<button
 			class=" text-sm hidden md:block p-2 min-w-[132px] bg-blue-600 text-gray-100 rounded-md hover:text-blue-600 hover:bg-transparent hover:border-blue-600 border-2 hover:font-semibold transition-all ease-in"
@@ -87,7 +95,7 @@
 
 	<a href="/">Home</a>
 	<a href="/aboutus">About</a>
-	<a href="/#services" >Services</a>
+	<a href="/#services">Services</a>
 	<a href="/pricing">Pricing</a>
 	<!-- <a href="/contactus">Contact</a> -->
 </div>
@@ -161,7 +169,7 @@
 		padding: 8px 8px 8px 32px;
 		text-decoration: none;
 		font-size: 25px;
-		color: indianred;
+		color: rgb(37 99 235);
 		display: block;
 		transition: 0.3s;
 	}
