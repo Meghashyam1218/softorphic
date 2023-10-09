@@ -1,10 +1,12 @@
 <section class="footer bg-gray-100 p-4 border-t-4 border-t-blue-600">
 	<div class="w-[90vw] xl:w-[90vw] max-w-[1600px] flex max-lg:flex-col max-lg:gap-8 justify-between mx-auto p-4">
 		<div class="footer-left text-base flex flex-col gap-4 text-gray-600 lg:p-4 fill-gray-400">
-			<div class="flex flex-col lg:basis-1/3 cursor-pointer">
+			<!-- <div class="flex flex-col lg:basis-1/3 cursor-pointer">
 				<p href="/#" class="font-black text-xs">SOFTORPHIC</p>
 				<p href="/#" class="font-bold text-xs text-justify">SFOTWARE SOLUTIONS</p>
-			</div>
+			</div> -->
+	<a href="/"><img alt="logo"  class="md:mx-auto" src="./logo-g-h-40.png" /></a>
+
 			<div class="footer-left-details flex gap-4 flex-col">
 				<div class="flex gap-2">
 					<svg
