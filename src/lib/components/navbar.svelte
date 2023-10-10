@@ -27,81 +27,46 @@
 	<a href="/"><img alt="logo" src="./logo-g-h-40.png" /></a>
 	<div class="lg:basis-2/3 flex justify-end items-center gap-4 text-xl">
 		<div class="dropdown1 hidden md:inline-block">
-			<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/"
+			<a class="navbtn text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/"
 				>Home</a
 			>
 
-			<a class=" text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2" href="/aboutus"
+			<a class="navbtn text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2" href="/aboutus"
 				>About Us
-				<!-- <svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg
-				> -->
 			</a>
-			<div class="dropdown-content">
-				<a href="/#">Link 1</a>
-				<a href="/#">Link 2</a>
-				<a href="/#">Link 3</a>
-			</div>
 		</div>
-		<div class="dropdown2 hidden md:inline-block">
-			<a
-				class=" text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2"
-				href="/#services"
-				>Services
-				<!-- <svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg
-				> -->
-			</a>
-			<div class="dropdown-content">
-				<a href="/#">Link 1</a>
-				<a href="/#">Link 2</a>
-				<a href="/#">Link 3</a>
-			</div>
-		</div>
-		<a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/pricing"
+
+		<a
+			class="navbtn text-sm lg:text-base dropbtn hidden md:inline-flex items-center gap-1 lg:p-2"
+			href="/#services"
+			>Services
+		</a>
+
+		<a class="navbtn text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/pricing"
 			>Pricing</a
 		>
-		<!-- <a class=" text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/contactus">Contact Us </a> -->
-		<button
-			class=" text-sm hidden md:block p-2 min-w-[132px] bg-blue-600 text-gray-100 rounded-md hover:text-blue-600 hover:bg-transparent hover:border-blue-600 border-2 hover:font-semibold transition-all ease-in"
+		<a
+			href="/contactus"
+			class=" text-sm text-center hidden md:block p-2 min-w-[132px] bg-blue-600 text-gray-100 rounded-md hover:text-blue-600 hover:bg-transparent hover:border-blue-600 border-2 hover:font-semibold transition-all ease-in"
 		>
 			Get Started
-		</button>
+		</a>
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<!-- svelte-ignore a11y-no-static-element-interactions -->
 		<span class="md:hidden" style="font-size:30px;cursor:pointer" on:click={openNav}>&#9776;</span>
 	</div>
 </nav>
 <div id="mySidenav" class="sidenav">
-	<a href="#" class="closebtn" on:click={closeNav}>&times;</a>
-
-	<a href="/">Home</a>
-	<a href="/aboutus">About</a>
-	<a href="/#services">Services</a>
-	<a href="/pricing">Pricing</a>
-	<!-- <a href="/contactus">Contact</a> -->
+	<a class="navtn closebtn" href="#"  on:click={closeNav}>&times;</a>
+	<a class="navtn" href="/">Home</a>
+	<a class="navtn" href="/aboutus">About Us</a>
+	<a class="navtn" href="/#services">Services</a>
+	<a class="navtn" href="/pricing">Pricing</a>
+	<a class="navtn"  href="/contactus">Contact Us</a>
 </div>
 
 <style>
-	a {
+	.navbtn {
 		background: linear-gradient(to right, rgba(44, 105, 105, 0), rgba(100, 200, 200, 0)),
 			linear-gradient(to right, rgb(255, 0, 0), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
 		background-size: 100% 0.1em, 0 0.1em;
@@ -110,8 +75,8 @@
 		transition: background-size 400ms;
 	}
 
-	a:hover,
-	a:focus {
+	.navbtn:hover,
+	.navbtn:focus {
 		background-size: 0 0.1em, 100% 0.1em;
 	}
 	/* .dropbtn {
