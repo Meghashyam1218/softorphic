@@ -1,6 +1,16 @@
 <script>
-	import { pricingItems } from '../../../lib/stores/pricing';
-	
+	import { pricingItems, selectedPricing } from '../../../lib/stores/pricing';
+	let select = selectedPricing;
+	selectedPricing.subscribe((value) => {
+		select = value;
+	});
+	function selectOption(a) {
+		selectedPricing.update((n) => a);
+		selectedPricing.subscribe((value) => {
+			select = value;
+		});
+	}
+	$: console.log(select)
 </script>
 
 <section class="lg:w-[90vw] mb-[100px] max-w-[1600px] mx-auto p-4 overflow-x-hidden">
@@ -9,8 +19,39 @@
 		Choose one of the options below to get an accurate price estimation for your project:
 	</p>
 	<div class="grid gap-10 md:grid-cols-2 justify-center xl:grid-cols-3">
+		<div
+			data-aos="zoom-in"
+			class="item rounded-xl border-blue-200 border-4 shadow-lg hover:shadow-blue-600/10 text-neutral-600 gap-2 p-4 flex flex-col justify-between"
+		>
+			<p class="p-4 font-serif text-xl 2xs:text-2xl text-neutral-700 text-center">
+				Already got a pricing?
+			</p>
+			<p class="font-mono text-xs px-8 text-center">
+				If you had already contacted us and had your requirements priced then you can either revise
+				or proceed to payment
+			</p>
+			<div class="grid gap-4 px-4 m-4">
+				<a
+					on:click={() => {
+						selectOption("Revise Pricing")
+						console.log(select)
+					}}
+					class="  bg-slate-100/70 text-gray-500 hover:border-b-gray-400 border-b-2 border-transparent text-center font-semibold p-3 rounded-lg"
+					href="/getpricing">Revise Pricing</a
+				>
+				<a
+					class=" bg-blue-100 text-blue-700 hover:border-b-blue-600 border-b-2 border-transparent font-bold tracking-wide text-center p-3 rounded-lg"
+					href="/payment">Proceed to Payment</a
+				>
+			</div>
+		</div>
 		{#each $pricingItems as item, index}
-			<div
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
+			<!-- svelte-ignore a11y-no-static-element-interactions -->
+			<a href="/getpricing" on:click={(item) => {
+				selectOption($pricingItems[index].name)
+				console.log(select)
+			}}
 				data-aos="zoom-in"
 				class="item border-2 cursor-pointer shadow-lg shadow-blue-600/10 md:border-l-blue-500 max-md:border-t-blue-500 border-l-4 gap-2 p-4 flex justify-between flex-col"
 			>
@@ -18,10 +59,10 @@
 					{@html item.svg}
 					<h1 class="text-2xl text-center text-gray-700 font-bold">{item.name}</h1>
 				</div>
-				<p class="text-gray-700 p-4">{item.description}</p>
+				<p class="text-gray-700 text-center p-4">{item.description}</p>
 				<div
 					href="#"
-					class="text-base text-blue-600 stroke-blue-600 font-bold stroke-2 inline-flex justify-end items-center p-2 mt-2"
+					class="text-base max-w-max mx-auto md:ml-auto rounded-lg bg-blue-50 text-blue-600 stroke-blue-600 font-bold stroke-2 inline-flex justify-end items-center p-2 mt-2"
 				>
 					<span class="  ">Get Pricing</span>
 					<svg
@@ -43,7 +84,7 @@
 						/>
 					</svg>
 				</div>
-			</div>
+			</a>
 		{/each}
 	</div>
 </section>

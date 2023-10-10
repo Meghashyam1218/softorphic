@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
-
+export const selectedPricing = writable('Hire a team');
 export const pricingItems = writable([
 	{
 		name: 'Hire a team',

@@ -27,11 +27,14 @@
 	<a href="/"><img alt="logo" src="./logo-g-h-40.png" /></a>
 	<div class="lg:basis-2/3 flex justify-end items-center gap-4 text-xl">
 		<div class="dropdown1 hidden md:inline-block">
-			<a class="navbtn text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/"
-				>Home</a
+			<a
+				class="navbtn text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2"
+				href="/">Home</a
 			>
 
-			<a class="navbtn text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2" href="/aboutus"
+			<a
+				class="navbtn text-sm lg:text-base dropbtn inline-flex items-center gap-1 lg:p-2"
+				href="/aboutus"
 				>About Us
 			</a>
 		</div>
@@ -42,11 +45,16 @@
 			>Services
 		</a>
 
-		<a class="navbtn text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2" href="/pricing"
-			>Pricing</a
+		<a
+			class="navbtn text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2"
+			href="/pricing">Pricing</a
 		>
 		<a
-			href="/contactus"
+			class="navbtn text-sm lg:text-base hidden md:inline-flex items-center gap-1 lg:p-2"
+			href="/contactus">Contact Us</a
+		>
+		<a
+			href="/getpricing"
 			class=" text-sm text-center hidden md:block p-2 min-w-[132px] bg-blue-600 text-gray-100 rounded-md hover:text-blue-600 hover:bg-transparent hover:border-blue-600 border-2 hover:font-semibold transition-all ease-in"
 		>
 			Get Started
@@ -57,12 +65,13 @@
 	</div>
 </nav>
 <div id="mySidenav" class="sidenav">
-	<a class="navtn closebtn" href="#"  on:click={closeNav}>&times;</a>
-	<a class="navtn" href="/">Home</a>
-	<a class="navtn" href="/aboutus">About Us</a>
-	<a class="navtn" href="/#services">Services</a>
-	<a class="navtn" href="/pricing">Pricing</a>
-	<a class="navtn"  href="/contactus">Contact Us</a>
+	<a class="navbtn closebtn" href="#" on:click={closeNav}>&times;</a>
+	<a class="navbtn" href="/">Home</a>
+	<a class="navbtn" href="/aboutus">About Us</a>
+	<a class="navbtn" href="/#services">Services</a>
+	<a class="navbtn" href="/pricing">Pricing</a>
+	<a class="navbtn" href="/contactus">Contact Us</a>
+	<a class="navbtn" href="/getpricing"> Get Started </a>
 </div>
 
 <style>
@@ -130,7 +139,7 @@
 	}
 
 	/* The navigation menu links */
-	.sidenav a {
+	.sidenav .navbtn {
 		padding: 8px 8px 8px 32px;
 		text-decoration: none;
 		font-size: 25px;
@@ -140,7 +149,7 @@
 	}
 
 	/* When you mouse over the navigation links, change their color */
-	.sidenav a:hover {
+	.sidenav .navbtn:hover {
 		color: black;
 	}
 

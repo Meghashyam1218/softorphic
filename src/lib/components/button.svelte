@@ -2,7 +2,7 @@
 <!-- Inspiration: https://dribbble.com/shots/4397812-Click-Me -->
 
 <a href="/#" class="cta inline-flex items-center">
-	<span class="text-sm text-neutral-700">Explore Services</span>
+	<span class="text-sm text-neutral-700">Get Started</span>
 	<svg width="13px" height="10px" class="text-neutral-700 stroke-neutral-700" viewBox="0 0 13 10">
 		<path d="M1,5 L11,5" />
 		<polyline points="8 1 12 5 8 9" />
