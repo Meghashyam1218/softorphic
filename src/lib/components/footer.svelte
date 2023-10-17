@@ -21,7 +21,7 @@
 							d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z"
 						/></svg
 					>
-					<p class="font-medium max-lg:text-sm text-gray-500">Inida (IN)</p>
+					<p class="font-medium max-lg:text-sm text-gray-500">India (IN)</p>
 				</div>
 				<div class="flex gap-2">
 					<svg
@@ -70,22 +70,22 @@
 			<h1 class="text-xl font-black text-gray-600 my-2">Softorphic</h1>
 			<a
 				alt="none"
-				href="/#"
+				href="/aboutus"
 				class="hover:underline max-lg:text-sm underline-offset-2 font-bold text-gray-500">About Us</a
 			>
 			<a
 				alt="none"
-				href="/#"
+				href="/#services"
 				class="hover:underline max-lg:text-sm underline-offset-2 font-bold text-gray-500">Services</a
 			>
 			<a
 				alt="none"
-				href="/#"
+				href="/pricing"
 				class="hover:underline max-lg:text-sm underline-offset-2 font-bold text-gray-500">Pricing</a
 			>
 			<a
 				alt="none"
-				href="/#"
+				href="/contactus"
 				class="hover:underline max-lg:text-sm underline-offset-2 font-bold text-gray-500">Contact Us</a
 			>
 		</div>
