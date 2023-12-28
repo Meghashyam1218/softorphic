@@ -12,11 +12,15 @@
 		<p class="font-normal pl-6">
 			- Refunds will be processed within 1-3 working days of refund request or failed transaction.
 		</p>
-		<p class="font-bold text-blue-700">3. Refund Process:</p>
+		<p class="font-bold text-blue-700">3. Refund Charges:</p>
+		<p class="font-normal pl-6">
+			- We don't charge any extra amount for refund process.
+		</p>
+		<p class="font-bold text-blue-700">4. Refund Process:</p>
 		<p class="font-normal pl-6">
 			- To request a refund, mail your reason and transaction details to praghuwanshi@softorphic.com.
 		</p>
-        <p class="font-bold text-blue-700">4. Contact Information:</p>
+        <p class="font-bold text-blue-700">5. Contact Information:</p>
 		<p class="font-normal pl-6">
 			- For refund-related inquiries, please contact praghuwanshi@softorphic.com .
 		</p>
