@@ -72,6 +72,8 @@
 	<a class="navbtn" href="/pricing">Pricing</a>
 	<a class="navbtn" href="/contactus">Contact Us</a>
 	<a class="navbtn" href="/getpricing"> Get Started </a>
+	<a class="navbtn !text-sm" href="/policies#refund"> Refund policies</a>
+	<a class="navbtn !text-sm " href="/policies"> Terms and Conditions</a>
 </div>
 
 <style>

@@ -88,6 +88,16 @@
 				href="/contactus"
 				class="hover:underline max-lg:text-sm underline-offset-2 font-bold text-gray-500">Contact Us</a
 			>
+			<a
+				alt="none"
+				href="/policies#refund"
+				class="hover:underline max-lg:text-sm underline-offset-2 font-bold text-gray-500">Refund Policies</a
+			>
+			<a
+				alt="none"
+				href="/policies"
+				class="hover:underline max-lg:text-sm underline-offset-2 font-bold text-gray-500">Terms and Conditions</a
+			>
 		</div>
 	</div>
 </section>
