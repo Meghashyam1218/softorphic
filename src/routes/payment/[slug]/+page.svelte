@@ -55,15 +55,20 @@
 					setLoading(false);
 					details = response.data;
 					console.log(details);
-					amount = details.data.amount.toString();
+					amount = details.data.amount / 100;
+					amount = amount.toString();
 					let decimal_pos = amount.indexOf('.');
-					console.log(decimal_pos)
+					console.log(decimal_pos);
 					let left_side = amount.substring(0, decimal_pos);
 					let right_side = amount.substring(decimal_pos);
 
 					left_side = formatNumber(left_side);
 					right_side = formatNumber(right_side);
-					amount = left_side + '.' + right_side;
+					if (decimal_pos > -1) {
+						amount = left_side + '.' + right_side;
+					}else{
+						amount = left_side + right_side;
+					}
 				});
 			// console.log(res);
 		} catch (err) {
