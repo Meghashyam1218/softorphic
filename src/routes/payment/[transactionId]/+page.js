@@ -7,7 +7,7 @@ export const load = ({ params }) => {
     if (params.transactionId.charAt(0)==="T") {
         console.log("calling api")
         try {
-            axios.post(`http://localhost:6969/api/status/${params.transactionId}/false`).then(response => {
+            axios.post(`https://softorphic-backend.vercel.app/api/status/${params.transactionId}/false`).then(response => {
                 // window.location.href = response.data
                 console.log(response.data)
                 details = response.data

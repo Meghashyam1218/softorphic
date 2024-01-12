@@ -29,7 +29,7 @@
 		console.log(integerValue);
 
 		try {
-			axios.post(`http://localhost:6969/api/payment`, data, {
+			axios.post(`https://softorphic-backend.vercel.app/api/payment`, data, {
 				headers: {
 					'Content-Type': 'application/json',
 
