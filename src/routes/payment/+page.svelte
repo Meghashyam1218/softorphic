@@ -1,9 +1,57 @@
 <script>
 	import Footer from '../../lib/components/footer.svelte';
 	import Navbar from '../../lib/components/navbar.svelte';
-	let inputValue
+	import axios from 'axios';
+	import { onMount } from 'svelte';
+	onMount(async () => {
+		// Make the API Call here
+	});
+	var data = {};
+	async function onSubmit(e) {
+		const formData = new FormData(e.target);
+		console.log(formData);
+
+		for (let field of formData) {
+			const [key, value] = field;
+			data[key] = value;
+		}
+		console.log(data);
+		var stringValue = data.amount;
+		data.MUID = 'MUID' + Date.now();
+		data.transactionId = 'T' + Date.now();
+
+		// Removing non-numeric characters
+		var numericString = stringValue.replace(/[^\d.]/g, '');
+
+		// Converting the numeric string to an integer
+		var integerValue = parseFloat(numericString, 10);
+		data.amount = integerValue;
+		console.log(integerValue);
+
+		try {
+			axios.post(`http://localhost:6969/api/payment`, data, {
+				headers: {
+					'Content-Type': 'application/json',
+
+					'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+					'Access-Control-Allow-Origin': true,
+					'Access-Control-Allow-Headers': '*'
+				}
+			}).then(response =>{
+				window.location.href = response.data
+				// console.log(response.data)
+			});
+			// console.log(res);
+		} catch (err) {
+			console.log(err);
+		}
+
+	
+	}
+
+	let inputValue;
 	function formatNumber(n) {
-		return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		return n.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 	}
 
 	function formatCurrency(event, blur) {
@@ -29,7 +77,7 @@
 				right_side += '00';
 			}
 
-			right_side = right_side.substring(0, 2);
+			right_side = right_side.substring(0, 3);
 
 			input_val = '₹ ' + left_side + '.' + right_side;
 		} else {
@@ -61,14 +109,22 @@
 			<h1 class="text-4xl xl:text-5xl text-blue-700 mb-5 font-serif text-center md:text-start">
 				Payment
 			</h1>
-			<form class="bg-blue-100/50 max-w-[500px] p-8 flex flex-col gap-4 rounded-lg">
+			<form
+				on:submit|preventDefault={onSubmit}
+				id="paymentForm"
+				class="bg-blue-100/50 max-w-[500px] p-8 flex flex-col gap-4 rounded-lg"
+			>
 				<div class="grid md:grid-cols-2 gap-4">
 					<input
+						required
+						name="name"
 						type="text"
 						class=" p-4 border-2 border-blue-300 hover:border-blue-500"
 						placeholder="Full Name"
 					/>
 					<input
+						
+						name="company"
 						type="text"
 						class=" p-4 border-2 border-blue-300 hover:border-blue-500"
 						placeholder="Company"
@@ -76,18 +132,27 @@
 				</div>
 				<div class="grid md:grid-cols-2 gap-4">
 					<input
-						type="eamil"
+						
+						name="email"
+						type="email"
 						class=" p-4 border-2 border-blue-300 hover:border-blue-500"
 						placeholder="Work Email"
 					/>
 					<input
-						type="tel"
+						required
+						name="mobile_number"
+						type="number"
 						class=" p-4 border-2 border-blue-300 hover:border-blue-500"
-						placeholder="+91 99XXXYYY17"
+						placeholder="99XXXYYY17"
+						maxlength="10"
 					/>
 				</div>
 				<input
-				bind:value="{inputValue}" on:keyup="{(e) => formatCurrency(e)}" on:blur="{() => formatCurrency(event, 'blur')}"
+					required
+					name="amount"
+					bind:value={inputValue}
+					on:keyup={(e) => formatCurrency(e)}
+					on:blur={() => formatCurrency(event, 'blur')}
 					class=" p-4 border-2 border-blue-300 hover:border-blue-500"
 					placeholder="₹ 10,000.00"
 				/>
