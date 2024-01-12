@@ -5,7 +5,7 @@
 				<p href="/#" class="font-black text-xs">SOFTORPHIC</p>
 				<p href="/#" class="font-bold text-xs text-justify">SFOTWARE SOLUTIONS</p>
 			</div> -->
-	<a href="/"><img alt="logo"  class="md:mx-auto" src="./logo-g-h-40.png" /></a>
+	<a href="/"><img alt="logo"  class="md:mx-auto" src="/logo-g-h-40.png" /></a>
 
 			<div class="footer-left-details flex gap-4 flex-col">
 				<div class="flex gap-2">
@@ -54,12 +54,12 @@
 		<div class="footer-middle flex flex-col gap-2">
 			<h1 class="text-gray-500 font-bold text-xl">Any Questions?</h1>
 			<textarea
-				class="p-2 rounded-md border-2 border-neutral-200 hover:border-blue-500 focus:border-blue-500"
+				class="p-2 rounded-md border-2 border-neutral-200 hover:border-blue-500 focus:border-blue-500 focus:border-blue-500"
 				placeholder="Ask your queries here..."
 			/>
 			<input
 				placeholder="Enter your email"
-				class="xl:w-[400px] rounded-md border-2 border-neutral-200 hover:border-blue-500 focus:border-blue-500 p-2"
+				class="xl:w-[400px] rounded-md border-2 border-neutral-200 hover:border-blue-500 focus:border-blue-500 focus:border-blue-500 p-2"
 				type="email"
 			/>
 			<button class="p-2 lg:w-[200px] rounded-md hover:bg-blue-600 bg-blue-500 text-slate-200"

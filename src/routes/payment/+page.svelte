@@ -119,14 +119,14 @@
 						required
 						name="name"
 						type="text"
-						class=" p-4 border-2 border-blue-300 hover:border-blue-500"
+						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 						placeholder="Full Name"
 					/>
 					<input
 						
 						name="company"
 						type="text"
-						class=" p-4 border-2 border-blue-300 hover:border-blue-500"
+						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 						placeholder="Company"
 					/>
 				</div>
@@ -135,14 +135,14 @@
 						
 						name="email"
 						type="email"
-						class=" p-4 border-2 border-blue-300 hover:border-blue-500"
+						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 						placeholder="Work Email"
 					/>
 					<input
 						required
 						name="mobile_number"
 						type="number"
-						class=" p-4 border-2 border-blue-300 hover:border-blue-500"
+						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 						placeholder="99XXXYYY17"
 						maxlength="10"
 					/>
@@ -153,7 +153,7 @@
 					bind:value={inputValue}
 					on:keyup={(e) => formatCurrency(e)}
 					on:blur={() => formatCurrency(event, 'blur')}
-					class=" p-4 border-2 border-blue-300 hover:border-blue-500"
+					class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 					placeholder="₹ 10,000.00"
 				/>
 				<input type="submit" class="my-2 bg-blue-400 hover:bg-blue-500 p-4 rounded-md" />

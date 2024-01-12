@@ -18,14 +18,14 @@
 				Let's Talk
 			</h1>
             <form class="bg-blue-100/50 p-8  flex flex-col gap-4 rounded-lg">
-                <textarea class="p-4 h-32 border-2 border-blue-300 hover:border-blue-500" placeholder="Something we can help you with?"></textarea>
+                <textarea class="p-4 h-32 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500" placeholder="Something we can help you with?"></textarea>
                 <div class="grid md:grid-cols-2 gap-4">
-                    <input type="text" class=" p-4 border-2 border-blue-300 hover:border-blue-500" placeholder="Full Name">
-                    <input type="text" class=" p-4 border-2 border-blue-300 hover:border-blue-500" placeholder="Company">
+                    <input type="text" class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500" placeholder="Full Name">
+                    <input type="text" class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500" placeholder="Company">
                 </div>
                 <div class="grid md:grid-cols-2 gap-4">
-                    <input type="eamil" class=" p-4 border-2 border-blue-300 hover:border-blue-500" placeholder="Work Email">
-                    <input type="tel" class=" p-4 border-2 border-blue-300 hover:border-blue-500" placeholder="Telephone">
+                    <input type="eamil" class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500" placeholder="Work Email">
+                    <input type="tel" class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500" placeholder="Telephone">
                 </div>
                 <input type="submit" class="my-2 bg-blue-400 hover:bg-blue-500 p-4 rounded-md">
             </form>

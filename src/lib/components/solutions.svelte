@@ -20,7 +20,7 @@
 				class="solution m-2 p-1 md:p-4 font-semibold{' justify-self-stretch h-[100%]'}
                 {' border-4 max-md:border-l-blue-500 md:border-r-blue-500'}
                 {"transition-all ease-in"}
-                {'hover:bg-blue-500 hover:text-slate-50 hover:border-blue-500'}
+                {'hover:bg-blue-500 hover:text-slate-50 hover:border-blue-500 focus:border-blue-500'}
                 flex justify-center items-center rounded-xl"
 			>
 				<h1 class="text-center max-md:text-sm ">{solution}</h1>

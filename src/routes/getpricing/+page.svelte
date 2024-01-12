@@ -35,41 +35,41 @@
 				Let's get started
 			</h1>
 			<form class="bg-blue-100 p-4 flex flex-col gap-4 rounded-lg">
-				<select bind:value={select} id="item" class="p-4 border-2 border-blue-300 hover:border-blue-500" name="item">
+				<select bind:value={select} id="item" class="p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500" name="item">
 					{#each arr as value}<option {value}>{value}</option>{/each}
 				</select>
 				{#if select === 'Revise Pricing'}
 					<input
 						type="text"
-						class=" p-4 border-2 border-blue-300 hover:border-blue-500"
+						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 						placeholder="Temporary Invoice ID"
 					/>
 				{/if}
 				<textarea
-					class="p-4 h-32 border-2 border-blue-300 hover:border-blue-500"
+					class="p-4 h-32 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 					placeholder="Write about your requirements in detail..."
 				/>
 				<div class="grid md:grid-cols-2 gap-4">
 					<input
 						type="text"
-						class=" p-4 border-2 border-blue-300 hover:border-blue-500"
+						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 						placeholder="Full Name"
 					/>
 					<input
 						type="text"
-						class=" p-4 border-2 border-blue-300 hover:border-blue-500"
+						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 						placeholder="Company"
 					/>
 				</div>
 				<div class="grid md:grid-cols-2 gap-4">
 					<input
 						type="eamil"
-						class=" p-4 border-2 border-blue-300 hover:border-blue-500"
+						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 						placeholder="Work Email"
 					/>
 					<input
 						type="tel"
-						class=" p-4 border-2 border-blue-300 hover:border-blue-500"
+						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 						placeholder="Telephone"
 					/>
 				</div>

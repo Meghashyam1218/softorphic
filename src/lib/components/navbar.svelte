@@ -24,7 +24,7 @@
 		<p href="/#" class="font-black text-xs">SOFTORPHIC</p>
 		<p href="/#" class="font-bold text-xs text-justify">SFOTWARE SOLUTIONS</p>
 	</div> -->
-	<a href="/"><img alt="logo" src="./logo-g-h-40.png" /></a>
+	<a href="/"><img alt="logo" src="/logo-g-h-40.png" /></a>
 	<div class="lg:basis-2/3 flex justify-end items-center gap-4 text-xl">
 		<div class="dropdown1 hidden md:inline-block">
 			<a
