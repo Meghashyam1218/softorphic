@@ -26,7 +26,7 @@
 		// Converting the numeric string to an integer
 		var integerValue = parseFloat(numericString, 10);
 		data.amount = integerValue;
-		console.log(integerValue);
+		console.log(data);
 
 		try {
 			axios.post(`https://softorphic-backend.vercel.app/api/payment`, data, {

@@ -66,7 +66,7 @@
 					right_side = formatNumber(right_side);
 					if (decimal_pos > -1) {
 						amount = left_side + '.' + right_side;
-					}else{
+					} else {
 						amount = left_side + right_side;
 					}
 				});
@@ -90,14 +90,24 @@
 				<h1 class="text-4xl xl:text-5xl text-blue-700 mb-5 font-serif text-center md:text-start">
 					{#if details.success == true}
 						Payment Complete
-					{:else}
+					{:else if details.data.state == 'FAILED'}
 						Payment Failed
+					{:else if details.data.state == 'PENDING'}
+						Payemnt Pending
 					{/if}
 				</h1>
 				<div
 					id="paymentSlip"
 					class="bg-blue-100/50 max-w-[500px] p-8 flex flex-col gap-4 rounded-lg"
 				>
+					<h1 class="text-blue-600 font-medium text-xl">
+						<br /><span class="text-gray-500 font-bold text-base"> {details.message}</span>
+					</h1>
+					{#if details.data.responseCode != "SUCCESS"}
+						<h1 class="text-blue-600 font-medium text-xl">
+							<br /><span class="text-gray-500 font-bold text-base"> {details.data.responseCodeDescription}</span>
+						</h1>
+					{/if}
 					<h1 class="text-blue-600 font-medium text-xl">
 						Transaction Id: <br /><span class="text-gray-500 font-bold text-base">
 							{'  ' + details.data.transactionId}</span
