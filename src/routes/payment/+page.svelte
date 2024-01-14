@@ -7,7 +7,9 @@
 		// Make the API Call here
 	});
 	var data = {};
+	var loading = false;
 	async function onSubmit(e) {
+		loading = true;
 		const formData = new FormData(e.target);
 		console.log(formData);
 
@@ -26,27 +28,34 @@
 		// Converting the numeric string to an integer
 		var integerValue = parseFloat(numericString, 10);
 		data.amount = integerValue;
-		console.log(data);
+		console.log(data.toString());
 
 		try {
-			axios.post(`https://softorphic-backend.vercel.app/api/payment`, data, {
-				headers: {
-					'Content-Type': 'application/json',
+			try {
+				axios.post('https://softorphic-backend.vercel.app/postUser', data).then((response) => {
+					console.log(response.body);
+				});
+			} catch (err) {
+				console.log(err);
+			}
+			axios
+				.post(`https://softorphic-backend.vercel.app/api/payment`, data, {
+					headers: {
+						'Content-Type': 'application/json',
 
-					'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
-					'Access-Control-Allow-Origin': true,
-					'Access-Control-Allow-Headers': '*'
-				}
-			}).then(response =>{
-				window.location.href = response.data
-				// console.log(response.data)
-			});
+						'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+						'Access-Control-Allow-Origin': true,
+						'Access-Control-Allow-Headers': '*'
+					}
+				})
+				.then((response) => {
+					window.location.href = response.data;
+					// console.log(response.data)
+				});
 			// console.log(res);
 		} catch (err) {
 			console.log(err);
 		}
-
-	
 	}
 
 	let inputValue;
@@ -112,7 +121,7 @@
 			<form
 				on:submit|preventDefault={onSubmit}
 				id="paymentForm"
-				class="bg-blue-100/50 max-w-[500px] p-8 flex flex-col gap-4 rounded-lg"
+				class="bg-blue-100/50 max-w-[500px] p-8 flex flex-col items-center gap-4 rounded-lg"
 			>
 				<div class="grid md:grid-cols-2 gap-4">
 					<input
@@ -123,7 +132,6 @@
 						placeholder="Full Name"
 					/>
 					<input
-						
 						name="company"
 						type="text"
 						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
@@ -132,7 +140,6 @@
 				</div>
 				<div class="grid md:grid-cols-2 gap-4">
 					<input
-						
 						name="email"
 						type="email"
 						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
@@ -153,10 +160,21 @@
 					bind:value={inputValue}
 					on:keyup={(e) => formatCurrency(e)}
 					on:blur={() => formatCurrency(event, 'blur')}
-					class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
+					class=" p-4 border-2 w-full border-blue-300 hover:border-blue-500 focus:border-blue-500"
 					placeholder="₹ 10,000.00"
 				/>
-				<input type="submit" class="my-2 bg-blue-400 hover:bg-blue-500 p-4 rounded-md" />
+				<button
+					type="submit"
+					disabled={loading || null}
+					class="my-2 bg-blue-400 hover:bg-blue-500 p-4 transition-all w-full ease-in {loading
+						? ' px-8 py-2'
+						: ''} rounded-md flex justify-center"
+					>{#if loading}<img
+							src="/loadingBT.svg"
+							alt="loading..."
+							class="h-[40px]"
+						/>{:else}Submit{/if}</button
+				>
 			</form>
 		</div>
 		<div data-aos="fade-in" class="basis-1/2 lg:block hidden p-4">

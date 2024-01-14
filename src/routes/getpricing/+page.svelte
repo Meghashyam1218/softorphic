@@ -19,6 +19,28 @@
 	arr.push("Revise Pricing")
 	console.log(arr)
 	$: console.log(select)
+
+	const handleSubmit = async (data) => {
+		status = 'Submitting...';
+		const formData = new FormData(data.currentTarget);
+		const object = Object.fromEntries(formData);
+		const json = JSON.stringify(object);
+		console.log(json)
+		const response = await fetch('https://api.web3forms.com/submit', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+				Accept: 'application/json'
+			},
+			body: json
+		});
+		const result = await response.json();
+		if (result.success) {
+			alert("Your Response was reecieved")
+			console.log(result);
+			status = result.message || 'Success';
+		}
+	};
 </script>
 
 
@@ -34,40 +56,42 @@
 			<h1 class="text-4xl xl:text-5xl text-blue-700 mb-5 font-serif text-center md:text-start">
 				Let's get started
 			</h1>
-			<form class="bg-blue-100 p-4 flex flex-col gap-4 rounded-lg">
+			<form on:submit|preventDefault={handleSubmit} class="bg-blue-100 p-4 flex flex-col gap-4 rounded-lg">
+				<input type="hidden" name="access_key" value="981f9065-29da-4794-b69c-2a0afc41857c">
+
 				<select bind:value={select} id="item" class="p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500" name="item">
 					{#each arr as value}<option {value}>{value}</option>{/each}
 				</select>
 				{#if select === 'Revise Pricing'}
-					<input
+					<input name="ReferenceID"
 						type="text"
 						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
-						placeholder="Temporary Invoice ID"
+						placeholder="Reference ID"
 					/>
 				{/if}
-				<textarea
+				<textarea name="description"
 					class="p-4 h-32 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 					placeholder="Write about your requirements in detail..."
 				/>
 				<div class="grid md:grid-cols-2 gap-4">
-					<input
+					<input name="Name"
 						type="text"
 						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 						placeholder="Full Name"
 					/>
-					<input
+					<input name="Company"
 						type="text"
 						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 						placeholder="Company"
 					/>
 				</div>
 				<div class="grid md:grid-cols-2 gap-4">
-					<input
-						type="eamil"
+					<input name="email"
+						type="email"
 						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 						placeholder="Work Email"
 					/>
-					<input
+					<input name="mobile"
 						type="tel"
 						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 						placeholder="Telephone"

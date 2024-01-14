@@ -19,6 +19,7 @@
 		});
 		const result = await response.json();
 		if (result.success) {
+			alert("Your Response was reecieved")
 			console.log(result);
 			status = result.message || 'Success';
 		}
@@ -57,7 +58,7 @@
 				</div>
 				<div class="grid md:grid-cols-2 gap-4">
 					<input name="email"
-						type="eamil"
+						type="email"
 						class=" p-4 border-2 border-blue-300 hover:border-blue-500 focus:border-blue-500"
 						placeholder="Work Email"
 					/>
